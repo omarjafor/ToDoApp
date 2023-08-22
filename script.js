@@ -17,6 +17,16 @@ taskButton.addEventListener('click', function () {
     inputField.value = '';
     const doneButtons = document.querySelectorAll('.done-btn');
     for(let btn of doneButtons){
-        
+        btn.addEventListener('click', function(e){
+            e.target.parentElement.parentElement.childNodes[3].style.textDecoration =
+                "line-through";
+            
+        })
+    }
+    const deleteButtons = document.querySelectorAll('.delete-btn');
+    for(let btn of deleteButtons){
+        btn.addEventListener('click', function(e){
+            e.target.parentElement.parentElement.remove();
+        })
     }
 })
