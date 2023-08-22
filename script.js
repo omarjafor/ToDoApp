@@ -31,7 +31,6 @@ taskButton.addEventListener('click', function () {
     }
     const clearButton = document.getElementById('clear-btn');
         clearButton.addEventListener('click', function(e){
-            e.target.parentElement.parentElement.children[0].children[1].childNodes.remove();
-            // e.target.parentElement.parentElement.children[0].children[1].remove();
+            e.target.parentElement.parentElement.children[0].children[1].remove();
         })
 })
