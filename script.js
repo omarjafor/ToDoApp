@@ -20,13 +20,13 @@ taskButton.addEventListener('click', function () {
         btn.addEventListener('click', function(e){
             e.target.parentElement.parentElement.childNodes[3].style.textDecoration =
                 "line-through";
-            
         })
     }
     const deleteButtons = document.querySelectorAll('.delete-btn');
     for(let btn of deleteButtons){
         btn.addEventListener('click', function(e){
             e.target.parentElement.parentElement.remove();
+            count --;
         })
     }
 })
