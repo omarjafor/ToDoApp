@@ -15,4 +15,8 @@ taskButton.addEventListener('click', function () {
     `;
     container.appendChild(tr);
     inputField.value = '';
+    const doneButtons = document.querySelectorAll('.done-btn');
+    for(let btn of doneButtons){
+        
+    }
 })
