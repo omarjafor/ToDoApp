@@ -14,4 +14,5 @@ taskButton.addEventListener('click', function () {
     </td>
     `;
     container.appendChild(tr);
+    inputField.value = '';
 })
